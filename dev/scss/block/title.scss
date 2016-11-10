@@ -1,0 +1,18 @@
+.title {
+    font-family: $main-font;
+    font-size: 65px;
+    text-align: center;
+    &--align-right {
+        text-align: right;
+    }
+
+    &__principal {
+        display: block;
+    }
+
+    &__additional {
+        display: block;
+        font-size: 65%;
+    }
+
+}

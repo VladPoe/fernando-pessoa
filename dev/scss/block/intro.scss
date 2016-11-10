@@ -4,11 +4,26 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    min-height: 600px;
     position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
 
     &__logo {
         position: absolute;
         right: 40px;
-        top: 40px;
+        top: 0;
+    }
+
+    &__title-wrap {
+        border-top: 1px solid transparent;
+    }
+
+    &__title {
+        margin-top: 50px;
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

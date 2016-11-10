@@ -2,3 +2,43 @@
 
 // fonts variables
 $font--primary: 'example', 'sans-serif';
+
+
+
+
+@font-face {
+    font-family: 'bezpredmetizm';
+    src: url('font/bezpredmetizm/bezpredmetizm-webfont.eot');
+    src: url('font/bezpredmetizm/bezpredmetizm-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/bezpredmetizm/bezpredmetizm-webfont.woff2') format('woff2'),
+    url('font/bezpredmetizm/bezpredmetizm-webfont.woff') format('woff'),
+    url('font/bezpredmetizm/bezpredmetizm-webfont.ttf') format('truetype'),
+    url('font/bezpredmetizm/bezpredmetizm-webfont.svg#bezpredmetizmbezpredmetizm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway-regular/raleway-regular.eot');
+    src: url('font/raleway-regular/raleway-regular.eot?#iefix') format('embedded-opentype'),
+    url('font/raleway-regular/raleway-regular.woff2') format('woff2'),
+    url('font/raleway-regular/raleway-regular.woff') format('woff'),
+    url('font/raleway-regular/raleway-regular.ttf') format('truetype'),
+    url('font/raleway-regular/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway-bold/raleway-bold.eot');
+    src: url('font/raleway-bold/raleway-bold.eot?#iefix') format('embedded-opentype'),
+    url('font/raleway-bold/raleway-bold.woff2') format('woff2'),
+    url('font/raleway-bold/raleway-bold.woff') format('woff'),
+    url('font/raleway-bold/raleway-bold.ttf') format('truetype'),
+    url('font/raleway-bold/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
