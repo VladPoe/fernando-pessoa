@@ -1,0 +1,14 @@
+.intro {
+    background-image: url('../img/overlays/pessoa-main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+}

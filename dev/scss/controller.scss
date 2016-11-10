@@ -1,0 +1,18 @@
+// scss-lint:disable StringQuotes
+// charset нужно указывать только в двойных кавычках
+@charset "utf-8";
+
+@import 'set/reset';
+@import 'set/var';
+@import 'set/mixin';
+@import 'set/font';
+@import 'set/common';
+@import 'set/grid';
+
+/* block:scss */
+@import 'block/common';
+@import 'block/content-section';
+@import 'block/intro';
+@import 'block/logo';
+@import 'block/visuallyhidden';
+/* endinject */
