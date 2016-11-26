@@ -3,16 +3,27 @@ extends ./../layouts/layout
 include ./../common/header
 
 block content
-  div.intro
-    div.content-section
-      h1.logo.intro__logo
-        span.visuallyhidden.
-          Фернанду Пессоа
-        img.logo__img(src="/img/elems/pessoa-signature.png" width="328" height="94" alt="Френанду Пессоа, подпись")
-      div.intro__title-wrap
-        h2.intro__title.title.title--align-right
-          span.title__principal Fernando Pessoa
-          span.title__additional o poeto
+  div.intro.page
+    aside.page__sidebar.sidebar
+      div.sidebar__overlay
+      nav.menu.sidebar__menu
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href="#") Биография
+          li.menu__item
+            a.menu__link(href="#") Поэзия
+          li.menu__item
+            a.menu__link(href="#") Гетеронимы
+    main.page__content
+      div.content-section
+        h1.logo.intro__logo
+          span.visuallyhidden.
+            Фернанду Пессоа
+          img.logo__img(src="/img/elems/pessoa-signature.png" width="328" height="94" alt="Френанду Пессоа, подпись")
+        div.intro__title-wrap
+          h2.intro__title.title.title--align-right
+            span.title__principal Fernando Pessoa
+            span.title__additional o poeto
 
 
 

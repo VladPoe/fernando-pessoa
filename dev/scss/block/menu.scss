@@ -1,0 +1,80 @@
+@-moz-keyframes machine-line {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes machine-line {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes machine-line {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    50% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes machine-line {
+     0% {
+         visibility: visible;
+         opacity: 1;
+     }
+     50% {
+         visibility: hidden;
+         opacity: 0;
+     }
+ }
+
+
+.menu {
+    font-family: $main-font;
+
+
+    &__list {
+
+    }
+
+    &__item {
+
+        &+& {
+            margin-top: 10px;
+        }
+    }
+
+    &__link {
+        font-size: 28px;
+        color: inherit;
+        display: inline-block;
+        transition-property: color;
+        transition-duration: 200ms;
+        position: relative;
+        text-shadow: 3px 2px 33px rgba(0,0,0,1);
+        //&:after {
+        //    content: '\00a0_';
+        //    display: inline-block;
+        //    position: relative;
+        //    animation: machine-line 1.2s steps(1) infinite;
+        //}
+        :root:not(.mobile) &:hover {
+            color: $hover-color;
+        }
+    }
+
+}

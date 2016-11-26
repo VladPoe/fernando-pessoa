@@ -1,19 +1,15 @@
 // viewports
-$screen-sm: 768px;
-$screen-md: 990px;
+$screen-sm: 599px;
+$screen-md: 1023px;
+$screen-wide: 1280px;
 
-@mixin clearfix {
-    &::after {
-        clear: both;
-        content: '';
-        display: table;
-    }
-}
+
 
 @mixin adaptive($point) {
 
-    $adaptive-sm: '(min-width: ' + $screen-sm + ')';
-    $adaptive-md: '(min-width: ' + $screen-md + ')';
+    $adaptive-sm: '(max-width: ' + $screen-sm + ')';
+    $adaptive-md: '(max-width: ' + $screen-md + ')';
+    $adaptive-wide: '(min-width: ' + $screen-wide + ')';
 
     @if $point == sm {
         @media #{$adaptive-sm} {
@@ -23,5 +19,20 @@ $screen-md: 990px;
         @media #{$adaptive-md} {
             @content;
         }
+    }
+    @else if $point == wide {
+        @media #{$adaptive-wide} {
+            @content;
+        }
+    }
+}
+
+
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
     }
 }
