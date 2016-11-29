@@ -7,10 +7,20 @@
         height: 100vh;
         top: 0;
         left: 0;
-        display: none;
         box-sizing: border-box;
+        transform: translateX(-100%);
+        transition-property: transform;
+        transition-duration: 300ms;
+        z-index: 10;
         @include adaptive(wide) {
-            display: block;
+            transform: translateX(0);
+        }
+        :root:not(.mobile) &.hint {
+            transform: translateX(-84%);
+        }
+
+        &.active {
+            transform: translateX(0);
         }
     }
 

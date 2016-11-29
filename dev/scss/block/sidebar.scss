@@ -1,5 +1,6 @@
 .sidebar {
-    overflow: auto;
+    //overflow: auto;
+
     &__overlay {
         position: absolute;
         width: 100%;
@@ -19,15 +20,64 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
-            box-shadow: inset -7px -3px 27px 4px rgba(0,0,0,1), 0 0 18px 13px rgba(0,0,0,0.4);
+            box-shadow: inset -7px -3px 27px 4px black, 0 0 12px 8px rgba(0, 0, 0, 0.7);
             opacity: 0.6;
         }
 
     }
 
+
     &__menu {
         position: relative;
         padding: 0 20px;
         margin-top: 100px;
+    }
+
+
+    &__open-btn {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        fill: white;
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(20px);
+        text-align: right;
+        &:focus {
+            outline: none;
+        }
+        @include adaptive(wide) {
+            display: none;
+        }
+    }
+
+    &__open-icon {
+        width: 20px;
+        height: 20px;
+        //transform-origin: 50% 50%;
+        //transition-property: transform;
+        transition-property: opacity;
+        transition-duration: 300ms;
+        opacity: 0.8;
+        //transition-timing-function: ease-in-out;
+
+        .hint & {
+            opacity: 0.3;
+        }
+
+        .active & {
+            transform: rotateZ(900deg);
+            right: 30px;
+            position: relative;
+            opacity: 0;
+        }
+
+        .active .sidebar__open-btn:hover & {
+            opacity: 0.3;
+        }
+
     }
 }
