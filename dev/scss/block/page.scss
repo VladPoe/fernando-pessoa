@@ -1,5 +1,13 @@
 .page {
 
+    &__hamburger-wrap {
+        position: fixed;
+        z-index: 11;
+        top: 20px;
+        left: 20px;
+
+    }
+
     &__sidebar {
         position: fixed;
         width: $menu-width;
@@ -9,11 +17,13 @@
         left: 0;
         box-sizing: border-box;
         transform: translateX(-100%);
-        transition-property: transform;
+        transition-property: transform, opacity;
         transition-duration: 300ms;
         z-index: 10;
+        opacity: 0.6;
         @include adaptive(wide) {
             transform: translateX(0);
+            opacity: 1;
         }
         :root:not(.mobile) &.hint {
             transform: translateX(-84%);
@@ -21,6 +31,7 @@
 
         &.active {
             transform: translateX(0);
+            opacity: 1;
         }
     }
 

@@ -6,13 +6,15 @@
     var menu = app.menu;
 
     $(document).ready(function(){
-        menu.init();
         if (!utils.isMobile()){
 
         }
         else {
             $('html').addClass('mobile');
         }
+
+        menu.init();
+
 
     });
 }(window, jQuery, window.PESSOA_APP || (window.PESSOA_APP = {})));

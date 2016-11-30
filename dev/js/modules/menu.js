@@ -11,6 +11,13 @@
             var sidebarHintClass = 'hint';
             var $showBtn = $('.js-sidebar-show-btn');
             var closeBtnClass = 'js-close-sidebar';
+            var $hamburger = $('.js-menu-hamburger');
+
+
+            $hamburger.on('click', function(event) {
+                event.stopPropagation();
+                toggleMenu();
+            });
 
             $showBtn.mouseover(function() {
                 hintMenu();
@@ -29,6 +36,7 @@
                 }
             });
 
+
             $('body').on('click', function() {
                 closeMenu();
             });
@@ -36,6 +44,7 @@
             $sidebar.on('click', function(event) {
                 event.stopPropagation();
             });
+
 
             function hintMenu() {
                 if (!$sidebar.hasClass(sidebarActiveClass) && !$sidebar.hasClass(sidebarHintClass)) {
@@ -60,6 +69,10 @@
                     $sidebar.removeClass(sidebarActiveClass);
                     $showBtn.removeClass(closeBtnClass);
                 }
+            }
+
+            function toggleMenu() {
+                $sidebar.toggleClass(sidebarActiveClass);
             }
 
         };

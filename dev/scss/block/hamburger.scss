@@ -1,0 +1,17 @@
+.hamburger {
+    width: 45px;
+    height: 45px;
+    fill: white;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+    :root.mobile & {
+        display: inline-block; //показываем только для мобильных
+    }
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        fill: inherit;
+    }
+}
