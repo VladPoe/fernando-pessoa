@@ -1,10 +1,17 @@
 .page {
 
+    @include adaptive(wide) {
+        margin-left: $menu-width;
+    }
+
     &__hamburger-wrap {
         position: fixed;
         z-index: 11;
         top: 20px;
         left: 20px;
+        @include adaptive(wide) {
+            display: none;
+        }
 
     }
 
@@ -28,6 +35,9 @@
         :root:not(.mobile) &.hint {
             transform: translateX(-84%);
         }
+        @include adaptive(wide) {
+            transition-duration: 0ms;
+        }
 
         &.active {
             transform: translateX(0);
@@ -37,12 +47,6 @@
 
     &__menu {
 
-    }
-
-    &__content {
-        @include adaptive(wide) {
-            padding-left: $menu-width;
-        }
     }
 
 }
