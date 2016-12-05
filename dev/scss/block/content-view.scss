@@ -1,13 +1,16 @@
 .content-view {
 
+    line-height: 1.35;
+
     &__content {
-        width: 600px;
-        padding: 30px;
+        padding: 50px 30px;
         margin-left: auto;
         margin-right: auto;
         background-image: url(../img/overlays/paper-texture--light.jpg);
         color: black;
         text-align: center;
+        background-size: 100% auto;
+        background-position: center;
 
         &--narrow {
             width: 450px;
@@ -15,7 +18,7 @@
     }
 
     &__poem {
-        white-space: pre-line;
+        //white-space: pre-line;
         display: inline-block;
         text-align: left;
     }

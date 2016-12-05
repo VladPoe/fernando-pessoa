@@ -7,7 +7,7 @@
     &__hamburger-wrap {
         position: fixed;
         z-index: 11;
-        top: 20px;
+        top: 10px;
         left: 20px;
         @include adaptive(wide) {
             display: none;
@@ -47,6 +47,29 @@
 
     &__menu {
 
+    }
+
+    &__audio {
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+    }
+
+    &__player {
+
+    }
+
+    &__play-btn {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        background-color: transparent;
+        background-image: url(../svg/play.svg);
+        background-repeat: no-repeat;
+        background-size: 28px;
+        background-position: 12px center;
     }
 
 }

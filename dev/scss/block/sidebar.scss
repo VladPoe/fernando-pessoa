@@ -27,10 +27,19 @@
 
     }
 
+    &__logo {
+        position: relative;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
     &__menu {
         position: relative;
         padding: 0 20px;
-        margin-top: 100px;
+        margin-top: 100px;.sidebar__logo + & {
+        margin-top: 40px;
+    }
     }
 
     &__open-btn {

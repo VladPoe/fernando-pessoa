@@ -25,7 +25,8 @@ gulp.task('assets', function(){
             config.backend_resources_path + '/img',
             config.backend_resources_path + '/svg',
             config.backend_resources_path + '/js',
-            config.backend_resources_path + '/css'
+            config.backend_resources_path + '/css',
+            config.backend_resources_path + '/audio'
         ],
         function(){
 
@@ -40,6 +41,9 @@ gulp.task('assets', function(){
 
             gulp.src(config.dest + '/css/**/*')
                 .pipe(gulp.dest(config.backend_resources_path + '/css'));
+
+            gulp.src(config.dest + '/audio/**/*')
+                .pipe(gulp.dest(config.backend_resources_path + '/audio'));
         }
     );
 });
@@ -56,7 +60,8 @@ gulp.task('build', function(callback){
             'js',
             'mock',
             'font',
-            'html'
+            'html',
+            'audio'
         ],
         callback
     );
