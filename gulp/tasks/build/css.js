@@ -29,7 +29,7 @@ gulp.task('css-inject-block', function(){
         .pipe(gulp.dest(config.src + '/scss/'));
 });
 
-gulp.task('css', ['css-lint', 'css-inject-block'], function(){
+gulp.task('css', ['css-inject-block'], function(){
 
     var is_prod = environmentVariable.getEnv(),
         livereload = environmentVariable.getLive();
